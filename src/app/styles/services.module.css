@@ -1,0 +1,129 @@
+.body{
+    display: block;
+    width: 100%;
+    height: 110rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.heading{
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 5rem;
+
+
+}
+
+.subheading{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 10rem;
+
+
+}
+
+.details{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: medium;
+    text-align:center;
+    
+}
+
+.btn {
+    display: inline-flex;
+    padding: 1rem 1.5rem;
+    background-color: #a00fa5;
+    color: #f5d1f2;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+
+  }
+  
+  .btn:hover {
+    background-color: #710e8a;
+    font-size: 25px;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.ulheading {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lidetails {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: medium;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Styles for medium screens (up to 768px) */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem; /* Adjusted size for medium screens */
+    }
+    .subheading {
+        font-size: 2rem; /* Adjusted size for medium screens */
+    }
+    .details {
+        font-size: 1.2rem; /* Adjusted size for medium screens */
+    }
+    .btn {
+        font-size: 0.9rem; /* Adjusted size for small screens */
+        padding: 0.5rem 1.5rem; /* Adjusted padding for small screens */
+    }
+    .ulheading,
+    .lidetails { /* Combined styles for consistency */
+        font-size: 1.75rem; /* 28px is approximately 1.75rem */
+    }
+}
+
+/* Styles for extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.5rem; /* Adjusted size for extra small screens */
+    }
+    .subheading {
+        font-size: 1.5rem; /* Adjusted size for extra small screens */
+    }
+    .details {
+        font-size: 1rem; /* Adjusted size for extra small screens */
+    }
+    .btn {
+        font-size: 0.8rem; /* Adjusted size for extra small screens */
+        padding: 0.4rem 1rem; /* Adjusted padding for extra small screens */
+    }
+    .ulheading,
+    .lidetails { /* Combined styles for consistency */
+        font-size: 1.375rem; /* 22px is approximately 1.375rem */
+    }
+}
