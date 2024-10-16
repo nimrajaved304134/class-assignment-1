@@ -1,7 +1,12 @@
 import services from '@/app/styles/services.module.css'
+import Header from '../../../../components/header/header'
+import Hero from '../../../../components/hero/hero'
+import Footer from '../../../../components/footer/footer'
 export default function Dynamicwebsite() {
     return (
       <>
+      <Header />
+      <Hero />
          <div className={services.body}>
          <h2 className={services.heading}>DYNAMIC WEBSITE</h2>
          <p className={services.details}>Build interactive sites with user-friendly interfaces and content management. </p>
@@ -18,5 +23,6 @@ export default function Dynamicwebsite() {
             <li className={services.lidetails}>Custom forms and search functionality</li>
          </ul>
          </div> 
+         <Footer />
       </>
     )}

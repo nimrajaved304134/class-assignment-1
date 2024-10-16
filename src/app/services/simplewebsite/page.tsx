@@ -1,7 +1,12 @@
 import services from '@/app/styles/services.module.css'
+import Header from '../../../../components/header/header'
+import Hero from '../../../../components/hero/hero'
+import Footer from '../../../../components/footer/footer'
 export default function Simplewebsite() {
     return (
       <>
+      <Header />
+      <Hero />
          <div className={services.body}>
          <h2 className={services.heading}>SIMPLE WEBSITE</h2>
          <p className={services.details}>Offer basic, responsive websites for personal portfolios, small businesses, or blogs. </p>
@@ -18,5 +23,6 @@ export default function Simplewebsite() {
             <li className={services.lidetails}>Fast loading times</li>
          </ul>
          </div> 
+         <Footer />
       </>
     )}

@@ -1,8 +1,14 @@
 import Link from 'next/link';
 import services from "@/app/styles/services.module.css";
+import Header from '../../../components/header/header';
+import Hero from '../../../components/hero/hero';
+import Footer from '../../../components/footer/footer';
 
 export default function Services() {
   return (
+    <>
+    <Header />
+    <Hero />
     <div className={services.body}>
       <h2 className={services.heading}>Our Services</h2>
       <div>
@@ -35,5 +41,7 @@ export default function Services() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }

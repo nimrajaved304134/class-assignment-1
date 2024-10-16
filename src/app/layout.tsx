@@ -28,39 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header>
-          <nav className="flex flex-col md:flex-row justify-between items-center bg-fuchsia-400">
-            <div className="px-4 py-2 md:py-4 text-lg">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl italic font-bold">
-                WEB SPACE
-              </h1>
-            </div>
-            <div className="flex justify-center items-center px-2 md:px-4 py-2 md:py-4 mx-2 md:mx-6">
-              <ul className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-5 px-4 py-2">
-                <li className="text-xl md:text-3xl font-medium">
-                  <Link href="/">Home</Link>
-                </li>
-                <li className="text-xl md:text-3xl font-medium">
-                  <Link href="/about-us">About</Link>
-                </li>
-                <li className="text-xl md:text-3xl font-medium">
-                  <Link href="/contact">Contact</Link>
-                </li>
-                <li className="text-xl md:text-3xl font-medium">
-                  <Link href="/services">Services</Link>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-
         {children}
-
-        <footer className="bg-fuchsia-400 flex justify-center items-center h-16 md:h-20">
-          <h3 className="text-2xl md:text-3xl font-medium text-center">
-            BEST WEB SERVICES
-          </h3>
-        </footer>
       </body>
     </html>
   );

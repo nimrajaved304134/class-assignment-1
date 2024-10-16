@@ -1,7 +1,12 @@
 import services from '@/app/styles/services.module.css'
+import Header from '../../../../components/header/header'
+import Hero from '../../../../components/hero/hero'
+import Footer from '../../../../components/footer/footer'
 export default function Ecommercewebsite() {
     return (
       <>
+      <Header />
+      <Hero />
          <div className={services.body}>
          <h2 className={services.heading}>ECOMMERCE WEBSITE</h2>
          <p className={services.details}>Create online stores with shopping carts, secure payments, and product management. </p>
@@ -18,5 +23,6 @@ export default function Ecommercewebsite() {
             <li className={services.lidetails}>Inventory and order management</li>
          </ul>
          </div> 
+         <Footer />
       </>
     )}
